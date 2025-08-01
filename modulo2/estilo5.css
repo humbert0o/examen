@@ -1,0 +1,16 @@
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+}
+.destacado {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+#resumen {
+    font-style: italic;
+    color: darkblue; 
+}
