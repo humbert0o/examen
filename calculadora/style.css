@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://cdn.wallpapersafari.com/49/36/fueZwo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px;
+}
+
+.pantalla {
+    background-color: #222;
+    padding: 20px;
+    text-align: right;
+}
+
+.pantalla input {
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 48px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.operador {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.operador:hover {
+    background-color: #c0392b;
+}
+
+.control {
+    background-color: #616161;
+    color: white;
+}
+
+.control:hover {
+    background-color: #424242;
+}
+
+.igual {
+    background-color: #4caf50;
+    color: white;
+    grid-row: span 2;
+}
+
+.igual:hover {
+    background-color: #388e3c;
+}
+
+@media (max-width: 360px) {
+    .calculadora {
+        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+    button {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .pantalla input {
+        font-size: 36px;
+    }
+}
